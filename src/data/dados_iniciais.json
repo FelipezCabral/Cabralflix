@@ -1,0 +1,185 @@
+{
+  "categorias": [
+    {
+      "titulo": "xQcOW",
+      "link": "https://www.youtube.com/channel/UCmDTrq0LNgPodDOFZiSbsww",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Vídeos do xQcOW ",
+        "url": "https://www.youtube.com/c/xQcOW/videos"
+      },
+      "videos": [
+        {
+          "titulo": "It was me and moxy! - Among Us with Adept, Moxy, and Friends!",
+          "url": "https://www.youtube.com/watch?v=1_9BnmEOtL8&t=214s"
+        },
+        {
+          "titulo": "WE MADE IT! - xQc Reacts to Achievements Comparison: Social Media Accomplishments",
+          "url": "https://www.youtube.com/watch?v=RI-W4n0R0jg"
+        },
+        {
+          "titulo": "xQcOW Stream Highlights #194",
+          "url": "https://www.youtube.com/watch?v=xrkrFS83-Lg"
+        },
+        {
+          "titulo": "xQc Reacts to Content Nuke: Pokimane",
+          "url": "https://www.youtube.com/watch?v=c53hhd3fJoA"
+        },
+        {
+          "titulo": "Bezos lacks critical information - Reddit Recap #154",
+          "url": "https://www.youtube.com/watch?v=87oSCEBR4Gw"
+        },
+        {
+          "titulo": "DESTROY ALL HUMANS! - xQcOW Full Playthrough",
+          "url": "https://www.youtube.com/watch?v=bWaoqb4nE70"
+        },
+        {
+          "titulo": "xQc Reacts to The Top 10 Zero IQ Moments in Esports History",
+          "url": "https://www.youtube.com/watch?v=sSjA2zbffC0"
+        },
+        {
+          "titulo": "xQc Reacts to Streamers Out of Context 2",
+          "url": "https://www.youtube.com/watch?v=M_3sJaxGTsM"
+        }        
+      ]
+    },
+    {
+      "titulo": "Empreendedorismo",
+      "cor": "#FF6600",
+      "link_extra": {
+        "text": "Vídeos de Estudos de Investimentos",
+        "url": "https://www.youtube.com/watch?v=UU3G_JC_Y8s&list=PLHvsswG2Q9jKtZ3_7SXITj5_z5s3vcNB-"
+      },
+      "videos": [
+        {
+          "titulo": "GUIA BÁSICO PARA EMPREENDER MELHOR! | Aprenda como fazer da sua EMPRESA + PRODUTIVA com 5 pilares!",
+          "url": "https://www.youtube.com/watch?v=jA-x-eiR69g"
+        },
+        {
+          "titulo": "RUMO AO BILHÃO #17 | ZEREI MINHA POSIÇÃO EM UM FII! Ibovespa -16,8% e a carteira +2,55% em 2020?",
+          "url": "https://www.youtube.com/watch?v=Ygcz961MhDk&t=7s"
+        },
+        {
+          "titulo": "GUIA BÁSICO DE OPÇÕES! Aprenda a operar opções na bolsa mesmo sendo iniciante!",
+          "url": "https://www.youtube.com/watch?v=Q51Vu0-0LQE&t=185s"
+        },
+        {
+          "titulo": "Como PROTEGER a sua carteira de INVESTIMENTOS | Guia SIMPLES pra montar um HEDGE na PRÁTICA!",
+          "url": "https://www.youtube.com/watch?v=zMP3UiMUa20"
+        }, 
+        {
+          "titulo": "AS 11 REGRAS DO MICHAEL JORDAN PRO SUCESSO! (e que você pode aplicar AGORA na sua vida)",
+          "url": "https://www.youtube.com/watch?v=16lr-G4s9KY"
+        }
+      ]
+    },
+    {
+      "titulo": "Data Science e Inteligência Artificial",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        },
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "Melhor forma de aprender Python",
+          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
