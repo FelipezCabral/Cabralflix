@@ -2,19 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
-    descrição: '',
+    descricao: '',
     cor: '',
   };
-  const [categorias, setcategorias] = useState([]);
+  const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave: nome, descrição, bla, bli
+    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
       [chave]: valor, // nome: 'valor'
@@ -28,34 +27,21 @@ function CadastroCategoria() {
     );
   }
 
-  useEffect(() => {
-    console.log('alo alo bolsonaru');
-    const URL_TOP = 'http://localhost:8080/categorias';
-    fetch(URL_TOP)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setcategorias([
-          ...resposta,
-        ]);
-      });
+  // ============
 
-    // setTimeout(() => {
-    //  setcategorias([
-    //    ...categorias,
-    //    {
-    //      id: 1,
-    //      nome: 'Front End',
-    //      descrição: 'Uma categoria boa',
-    //      cor: '#cbd1ff',
-    //    },
-    //    {
-    //      id: 2,
-    //      nome: 'Back End',
-    //      descrição: 'Outra categoria boa',
-    //      cor: '#cbd1ff',
-    //    },
-  //    ]);
-  //  }, 4 * 1000);//
+  useEffect(() => {
+    if (window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias';
+      fetch(URL)
+        .then(async (respostaDoServer) => {
+          if (respostaDoServer.ok) {
+            const resposta = await respostaDoServer.json();
+            setCategorias(resposta);
+            return;
+          }
+          throw new Error('Não foi possível pegar os dados');
+        });
+    }
   }, []);
 
   return (
@@ -67,28 +53,42 @@ function CadastroCategoria() {
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
-        setcategorias([
+
+        setCategorias([
           ...categorias,
           values,
         ]);
+
         setValues(valoresIniciais);
       }}
       >
 
         <FormField
           label="Nome da Categoria"
+          type="text"
           name="nome"
           value={values.nome}
           onChange={handleChange}
         />
 
         <FormField
-          label="Descrição"
-          type="textarea"
-          name="descrição"
-          value={values.descrição}
+          label="Descrição:"
+          type="????"
+          name="descricao"
+          value={values.descricao}
           onChange={handleChange}
         />
+        {/* <div>
+          <label>
+            Descrição:
+            <textarea
+              type="text"
+              value={values.descricao}
+              name="descricao"
+              onChange={handleChange}
+            />
+          </label>
+        </div> */}
 
         <FormField
           label="Cor"
@@ -97,29 +97,33 @@ function CadastroCategoria() {
           value={values.cor}
           onChange={handleChange}
         />
+        {/* <div>
+          <label>
+            Cor:
+            <input
+              type="color"
+              value={values.cor}
+              name="cor"
+              onChange={handleChange}
+            />
+          </label>
+        </div> */}
 
-        <Button>
+        <button type="submit">
           Cadastrar
-        </Button>
+        </button>
       </form>
-
-      {categorias.length === 0 && (
-      <div>
-        {/* Cargando... */}
-        Loading...
-      </div>
-      )}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.id}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
 
       <Link to="/">
-        Ir para Home
+        Ir para home
       </Link>
     </PageDefault>
   );
